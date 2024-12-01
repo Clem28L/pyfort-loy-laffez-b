@@ -44,3 +44,45 @@ def epreuve_math_premier():
     else:
         print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
     return False
+
+
+def epreuve_roulette_math():
+    nb1=randint(1,20)
+    nb2=randint(1,20)
+    nb3=randint(1,20)
+    nb4=randint(1,20)
+    nb5=randint(1,20)
+    operation=["+","-","*"]
+    nb_op=randint(0,2)
+    print("Nombres sur la roulette: [",nb1,",",nb2,",",nb3,",",nb4,",",nb5,"]")
+    if operation[nb_op]=="+":
+            bonne_reponse=nb1+nb2+nb3+nb4+nb5
+            print("Calculez le résultat en combinant ces nombres avec une addition ")
+            reponse_joueur = int(input("Entrez votre réponse :"))
+            if bonne_reponse == reponse_joueur:
+                print("Bravo , Vous avez gagné une clé!!")
+                return True
+            else:
+                print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+            return False
+    if operation[nb_op]=="-":
+        bonne_reponse=nb1-nb2-nb3-nb4-nb5
+        print("Calculez le résultat en combinant ces nombres avec une soustraction")
+        reponse_joueur = int(input("Entrez votre réponse :"))
+        if bonne_reponse == reponse_joueur:
+            print("Bravo , Vous avez gagné une clé!!")
+            return True
+        else:
+            print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+            return False
+    if operation[nb_op] == "*":
+        bonne_reponse = nb1 * nb2 * nb3 * nb4 * nb5
+        print("Calculez le résultat en combinant ces nombres avec une multiplication")
+        reponse_joueur = int(input("Entrez votre réponse :"))
+        if bonne_reponse == reponse_joueur:
+            print("Bravo , Vous avez gagné une clé!!")
+            return True
+        else:
+            print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+            return False
+
