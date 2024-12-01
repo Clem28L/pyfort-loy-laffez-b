@@ -17,7 +17,7 @@ def affichage_bonneteau(liste_bonneteau):
 def bonneteau():
     liste_elements = ["A","B","C"]
     tentative = 2
-    print("te voila arrivé dans l'epreuve du bonneteau, c'est assez simple, blablabla "+ str(tentative))
+    print("te voila arrivé dans l'epreuve du bonneteau, c'est assez simple, la clé se trouve sous un de ses bonneteaux, tu as deux essaie a toi de le retrouver "+ str(tentative))
 
     bonneteau_gagnant = liste_elements[randint(0,len(liste_elements)-1)]
     while tentative >0:
@@ -32,7 +32,7 @@ def bonneteau():
             return True
         del liste_elements[liste_elements.index(bonneteau_choisie)]
         tentative = tentative -1
-    print("tu as perdu... le bonneteaux se trouvé sous le bonneteau "+ liste_elements[0])
+    print("tu as perdu... la clé se trouvé sous le bonneteau "+ liste_elements[0])
 
 
 
