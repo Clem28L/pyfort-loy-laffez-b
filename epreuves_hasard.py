@@ -1,6 +1,9 @@
 from random import randint
 
+"""
+#---------Pyfort-Epreuves-Hasard---------#
 
+"""
 def affichage_bonneteau(liste_bonneteau):
     print("#-------Bonneteau  disponible-------#")
     print("      ", end="")
@@ -34,4 +37,82 @@ def bonneteau():
         tentative = tentative -1
     print("tu as perdu... la clé se trouvé sous le bonneteau "+ liste_elements[0])
 
-bonneteau()
+
+def afficher_de(face):
+    if face == 1:
+        print("|-----|")
+        print("|     |")
+        print("|  *  |")
+        print("|     |")
+        print("|-----|")
+    elif face == 2:
+        print("|-----|")
+        print("| *   |")
+        print("|     |")
+        print("|   * |")
+        print("|-----|")
+    elif face == 3:
+        print("|-----|")
+        print("| *   |")
+        print("|  *  |")
+        print("|   * |")
+        print("|-----|")
+    elif face == 4:
+        print("|-----|")
+        print("| * * |")
+        print("|     |")
+        print("| * * |")
+        print("|-----|")
+    elif face == 5:
+        print("|-----|")
+        print("| * * |")
+        print("|  *  |")
+        print("| * * |")
+        print("|-----|")
+    elif face == 6:
+        print("|-----|")
+        print("| * * |")
+        print("| * * |")
+        print("| * * |")
+        print("|-----|")
+
+
+def jeu_lance_des():
+    essais = 3
+    while essais > 0:
+        print("il vous reste "+ str(essais)+ " essais")
+        input("Appuie sur ESPACE pour lancer les dès")
+        des = (randint(1,6), randint(1,6))
+        print("Vous avez obtenu le de suivant ")
+        afficher_de(des[0])
+        if des[0] == 6:
+            print("Vous avez gagné !!")
+            return True
+        print("Le maitre a otebnu le de suivant")
+        afficher_de(des[1])
+        if des[1] == 6:
+            print("Vous avez perdu ...")
+            return False
+        if des[1] != 6 and des[0] != 6:
+            print("personne n'a obtenu de 6.")
+            if essais == 0:
+                print("Apres 3 essaie personne n'a obtenu de 6, match nul !")
+                return False
+            print("On recommence !!")
+            essais -= 1
+
+
+
+
+jeu_lance_des()
+
+
+
+
+
+
+
+
+
+
+
