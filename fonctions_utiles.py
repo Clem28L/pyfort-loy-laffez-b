@@ -4,3 +4,47 @@ def introduction():
     print("bienvenue dans l'aventure Fort-Boyard")
     print("tu doit accomplir des épreuves pour gagner des clés et déverrouiller la salle du trésor")
     print("L'objectif est de ramasser trois clés pour accéder à la salle du trésor")
+
+def composer_equipe():
+    nb_joueurs=int(input("Combien de joueur dans l'équipe ?"))
+    equipe={}
+    joueur1={}
+    joueur2={}
+    joueur3={}
+    while nb_joueurs>3:
+        print("Max 3 joueurs dans l'équipe !")
+        nb_joueurs = int(input("Combien de joueur dabs l'équipe ?"))
+    for i in range(nb_joueurs):
+        if i==0:
+            nom=input("Nom du joueur : ")
+            profession=input("Profession du joueur : ")
+            leader=int(input("Le joueurs est leader ? (0 pour non / 1 pour oui)"))
+            joueur1["Nom"]=nom
+            joueur1["Profession"]=profession
+            joueur1["Leader"]=leader
+            equipe={1:joueur1}
+        if i==1:
+            nom=input("Nom du joueur : ")
+            profession=input("Profession du joueur : ")
+            leader=int(input("Le joueurs est leader ? (0 pour non / 1 pour oui)"))
+            joueur2["Nom"]=nom
+            joueur2["Profession"]=profession
+            joueur2["Leader"]=leader
+            equipe={1:joueur1,2:joueur2}
+        if i==2:
+            nom=input("Nom du joueur : ")
+            profession=input("Profession du joueur : ")
+            leader=int(input("Le joueurs est leader ? (0 pour non / 1 pour oui)"))
+            joueur3["Nom"]=nom
+            joueur3["Profession"]=profession
+            joueur3["Leader"]=leader
+            equipe={1:joueur1,2:joueur2,3:joueur3}
+    equipe["Clé gagné"]=0
+    for i in range(1,nb_joueurs+1):
+        if equipe[i]["Leader"] == 1:
+            return equipe
+        else:equipe[1]["Leader"] = 1
+    return equipe
+
+
+print(composer_equipe())
