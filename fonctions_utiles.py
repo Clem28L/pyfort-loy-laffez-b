@@ -43,8 +43,20 @@ def composer_equipe():
     for i in range(1,nb_joueurs+1):
         if equipe[i]["Leader"] == 1:
             return equipe
-        else:equipe[1]["Leader"] = 1
+        else:
+            equipe[1]["Leader"] = 1
     return equipe
 
 
-print(composer_equipe())
+def choisir_joueur(equipe):
+    for i in range(1,len(equipe)):
+        if equipe[i]["Leader"] == 1:
+            print(str(i),'. '+equipe[i]["Nom"]+" ("+equipe[i]["Profession"]+") - Leader")
+        else:
+            print(str(i),'. '+equipe[i]["Nom"]+" ("+equipe[i]["Profession"]+") - Membre")
+    nb = int(input("Entrez le numéro du joueur: "))
+    return equipe[nb]
+
+print(choisir_joueur(composer_equipe()))
+
+
