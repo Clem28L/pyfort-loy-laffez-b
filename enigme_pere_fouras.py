@@ -16,6 +16,7 @@ def charger_enigmes(fichier):
     with open(fichier, 'r', encoding='utf-8') as f:
         donnees = json.load(f)
     liste_enigmes = []
+    #creation de la liste des dictionnaire question/reponse
     for enigme in donnees:
         liste_enigmes.append({"question": enigme["question"], "reponse": enigme["reponse"]})
     return liste_enigmes
@@ -33,6 +34,7 @@ def enigme_pere_fouras():
     enigme = liste_enigmes[randint(0, len(liste_enigmes) - 1)]
     print(enigme["question"])
     essaie = 3
+    #boucle qui laisse trois essaie pour deviner la reponse
     while essaie >0:
         reponse = input("Quel est ta réponse à l'engime ?").lower()
         if reponse == enigme["reponse"].lower():
