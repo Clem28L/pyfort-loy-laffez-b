@@ -51,7 +51,7 @@ def est_premier(n):
         i+=1
     return Premier
 
-def premier_le_plus_proche(n):
+def premier_le_plus_proche_sup(n):
     '''
     Parametres : n(entier)
     Sortie : n(entier)
@@ -59,7 +59,17 @@ def premier_le_plus_proche(n):
     de n que soit n ou un nombre supérieur
     '''
     while est_premier(n)==False:
-        n=n+1
+            n=n+1
+    return n
+def premier_le_plus_proche_inf(n):
+    '''
+    Parametres : n(entier)
+    Sortie : n(entier)
+    Rôle: Donner le nombre premier le plus proche
+    de n que soit n ou un nombre supérieur
+    '''
+    while est_premier(n)==False:
+            n=n-1
     return n
 
 def epreuve_math_premier():
@@ -73,14 +83,37 @@ def epreuve_math_premier():
     print("Epreuve du Nombre Premiers : ")
     nombre_aleatoire=randint(10,20)
     print("Trouvez le nombre premier le plus proche de :",nombre_aleatoire)
-    bonne_reponse=premier_le_plus_proche(nombre_aleatoire)
-    reponse_joueur=int(input("Entrez votre réponse :"))
-    if bonne_reponse==reponse_joueur:#Verifie si la réponse est la bonne
-        print("Bravo , Vous avez gagné une clé!!")
-        return True
+    if est_premier(nombre_aleatoire):
+        bonne_reponse=nombre_aleatoire
+        reponse_joueur=int(input("Entrez votre réponse :"))
+        if bonne_reponse == reponse_joueur:  # Verifie si la réponse est la bonne
+            print("Bravo , Vous avez gagné une clé!!")
+            return True
+        else:
+            print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+            return False
     else:
-        print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
-    return False
+        if nombre_aleatoire-premier_le_plus_proche_sup(nombre_aleatoire)==nombre_aleatoire-premier_le_plus_proche_inf(nombre_aleatoire):
+            bonne_reponse=premier_le_plus_proche_sup(nombre_aleatoire)
+            bonne_reponse2=premier_le_plus_proche_inf(nombre_aleatoire)
+            reponse_joueur = int(input("Entrez votre réponse :"))
+            if bonne_reponse == reponse_joueur or bonne_reponse2==reponse_joueur:  # Verifie si la réponse est la bonne
+                print("Bravo , Vous avez gagné une clé!!")
+                return True
+            else:
+                print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+                return False
+        else:
+            bonne_reponse=min(nombre_aleatoire-premier_le_plus_proche_sup(nombre_aleatoire),nombre_aleatoire-premier_le_plus_proche_inf(nombre_aleatoire))
+            print(bonne_reponse)
+            bonne_reponse=bonne_reponse+nombre_aleatoire
+            reponse_joueur=int(input("Entrez votre réponse :"))
+            if bonne_reponse==reponse_joueur:#Verifie si la réponse est la bonne
+                print("Bravo , Vous avez gagné une clé!!")
+                return True
+            else:
+                print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
+                return False
 
 
 def epreuve_roulette_math():
@@ -138,7 +171,7 @@ def epreuve_math():
     Sortie : Booléen
     Rôle: Choisis aleatoirement une épreuve et renvois le résultats du resulats de l'épreuve 
     """
-    epreuves=[epreuve_math_factorielle,epreuve_math_premier,epreuve_roulette_math]
+    epreuves=[epreuve_math_premier]
     epreuve=randint(0,len(epreuves)-1)
     return epreuves[epreuve]()
 
