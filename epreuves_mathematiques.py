@@ -30,7 +30,7 @@ def epreuve_math_factorielle():
     print("Vous devez calculer la factorielle de :",factorielle_aleatoire,"!")
     reponse_joueur=int(input("Entrez votre réponse  :"))
     bonne_reponse=factorielle(factorielle_aleatoire)
-    if reponse_joueur==bonne_reponse:
+    if reponse_joueur==bonne_reponse:#Verifie si la réponse est la bonne
         print("Bravo , Vous avez gagné une clé!!")
         return True
     else:print("Mauvaise réponse !! La bonne réponse était :",bonne_reponse,".")
@@ -75,7 +75,7 @@ def epreuve_math_premier():
     print("Trouvez le nombre premier le plus proche de :",nombre_aleatoire)
     bonne_reponse=premier_le_plus_proche(nombre_aleatoire)
     reponse_joueur=int(input("Entrez votre réponse :"))
-    if bonne_reponse==reponse_joueur:
+    if bonne_reponse==reponse_joueur:#Verifie si la réponse est la bonne
         print("Bravo , Vous avez gagné une clé!!")
         return True
     else:
@@ -100,7 +100,7 @@ def epreuve_roulette_math():
     operation=["+","-","*"]
     nb_op=randint(0,2)
     print("Nombres sur la roulette: [",nb1,",",nb2,",",nb3,",",nb4,",",nb5,"]")
-    if operation[nb_op]=="+":
+    if operation[nb_op]=="+":#Verifie l'opération a faire pour l'épreuve
             bonne_reponse=nb1+nb2+nb3+nb4+nb5
             print("Calculez le résultat en combinant ces nombres avec une addition ")
             reponse_joueur = int(input("Entrez votre réponse :"))
@@ -110,7 +110,7 @@ def epreuve_roulette_math():
             else:
                 print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
             return False
-    if operation[nb_op]=="-":
+    if operation[nb_op]=="-":#Verifie l'opération a faire pour l'épreuve
         bonne_reponse=nb1-nb2-nb3-nb4-nb5
         print("Calculez le résultat en combinant ces nombres avec une soustraction")
         reponse_joueur = int(input("Entrez votre réponse :"))
@@ -120,7 +120,7 @@ def epreuve_roulette_math():
         else:
             print("Mauvaise réponse !! La bonne réponse était :", bonne_reponse, ".")
             return False
-    if operation[nb_op] == "*":
+    if operation[nb_op] == "*":#Verifie l'opération a faire pour l'épreuve
         bonne_reponse = nb1 * nb2 * nb3 * nb4 * nb5
         print("Calculez le résultat en combinant ces nombres avec une multiplication")
         reponse_joueur = int(input("Entrez votre réponse :"))
@@ -132,7 +132,7 @@ def epreuve_roulette_math():
             return False
 
 
-def epreuve_math()
+def epreuve_math():
     """  
     Parametres : /
     Sortie : Booléen
@@ -142,5 +142,5 @@ def epreuve_math()
     epreuve=randint(0,len(epreuves)-1)
     return epreuves[epreuve]()
 
-
+epreuve_math()
 
