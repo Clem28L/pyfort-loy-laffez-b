@@ -14,7 +14,7 @@ def charger_donnee():
     Sortie : liste de mots
     Rôle: permet de charger les donnees et les inserer dans une liste, ceci pour facilité la lecture
     '''
-    with open("indicesSalle.json", 'r', encoding='utf-8') as f:
+    with open("data/indicesSalle.json", 'r', encoding='utf-8') as f:
         donnees = json.load(f)
     liste_mot_code = []
     #boucle qui insere les données dans une liste
