@@ -1,4 +1,14 @@
+""""#---------Pyfort-Epreuve-Finale---------#
+Rôle : Fichier contenant les fonctions utiles pour le projet
+Auteurs: Nathan Laffez/Clément Loy
+"""
+
 def introduction():
+    '''
+    Parametres : /
+    Sortie : aucune sortie juste de l'affichage
+    Rôle: fonction qui affiche l'introduction au jeu
+    '''
     print("#-------------------------Fort-Boyard-------------------#")
     print("bienvenue dans l'aventure Fort-Boyard")
     print("tu doit accomplir des épreuves pour gagner des clés et déverrouiller la salle du trésor")
@@ -6,6 +16,11 @@ def introduction():
 
 
 def composer_equipe():
+    '''
+    Parametres : /
+    Sortie :  dictionnaire contenant l'equipe
+    Rôle: fonction qui permet de crée une equipe avec au maximun 3 membres
+    '''
     nb_joueurs = int(input("Combien de joueur dans l'équipe ?"))
     equipe = {}
     joueur1 = {}
@@ -49,6 +64,11 @@ def composer_equipe():
 
 
 def choisir_joueur(equipe):
+    '''
+    Parametres : equipe (dictionnaire)
+    Sortie : joueur sous forme de dictionnaire
+    Rôle: permet de chosir un joueur pour l'épreuve
+    '''
     for i in range(1, len(equipe)):
         if equipe[i]["Leader"] == 1:
             print(str(i), '. ' + equipe[i]["Nom"] + " (" + equipe[i]["Profession"] + ") - Leader")
@@ -59,6 +79,11 @@ def choisir_joueur(equipe):
 
 
 def menu_epreuves():
+    '''
+    Parametres : /
+    Sortie : entier qui reprensente une epreuve
+    Rôle: permet de chosir une épreuve
+    '''
     print("Menu des Épreuves :")
     print("1. Épreuve de Mathématiques")
     print("2. Épreuve de Logique")
