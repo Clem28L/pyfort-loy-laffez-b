@@ -10,6 +10,9 @@ equipe = composer_equipe()
 
 cle = 0
 while cle != 3:
+    print("#--------------------------------------------------------------------------------#")
+    print("                          "+str(cle)+" cle                   ")
+    print("#--------------------------------------------------------------------------------#")
     choix = menu_epreuves()
     print(choix)
     choisir_joueur(equipe)

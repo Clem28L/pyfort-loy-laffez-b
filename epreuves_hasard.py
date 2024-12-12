@@ -128,7 +128,8 @@ def jeu_lance_des():
             if essais == 0:
                 print("Apres 3 essaie personne n'a obtenu de 6, match nul !")
                 return False
-            print("On recommence !!")
+            else:
+                print("On recommence !!")
             essais -= 1
 
 
