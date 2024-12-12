@@ -142,8 +142,6 @@ def epreuve_hasard():
     epreuve=randint(0,len(epreuves)-1)
     return epreuves[epreuve]()
 
-epreuve_hasard()
-
 
 
 

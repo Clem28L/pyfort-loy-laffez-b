@@ -186,7 +186,6 @@ def jeu_battaile_navale():
             return False
 
 
-jeu_battaile_navale()
 
 
 

@@ -30,7 +30,7 @@ def enigme_pere_fouras():
     Sortie : aucune sortie fonction principal qui permet d'afficher et d'interagir avec l'utilisateur
     Rôle: permet de donner une enigme a l'utilisateur et qu'il puisse y repondre, le joueur a trois essaie pour trouver la reponse
     '''
-    liste_enigmes = charger_enigmes("enigmesPF.json")
+    liste_enigmes = charger_enigmes("data/enigmesPF.json")
     enigme = liste_enigmes[randint(0, len(liste_enigmes) - 1)]
     print(enigme["question"])
     essaie = 3
@@ -45,4 +45,3 @@ def enigme_pere_fouras():
             print("reponse incorrecte, cherche encore il te reste ", str(essaie),"essaie pour trouver !")
     print("Malheurement tu as perdu, la reponse était", str(enigme["reponse"]))
 
-enigme_pere_fouras()

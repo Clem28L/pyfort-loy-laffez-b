@@ -1,16 +1,36 @@
-# This is a sample Python script.
+from enigme_pere_fouras import enigme_pere_fouras
+from epreuve_finale import salle_De_tresor
+from epreuves_hasard import epreuve_hasard
+from epreuves_logiques import jeu_battaile_navale
+from epreuves_mathematiques import epreuve_math
+from fonctions_utiles import *
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+introduction()
+equipe = composer_equipe()
+
+cle = 0
+while cle != 3:
+    choix = menu_epreuves()
+    print(choix)
+    choisir_joueur(equipe)
+    if choix ==1 :
+        if epreuve_math() == True:
+            cle = cle + 1
+    elif choix ==3 :
+        if epreuve_hasard() == True:
+            cle = cle + 1
+    elif choix ==2 :
+        if jeu_battaile_navale() == True:
+            cle = cle + 1
+    elif choix ==4 :
+        if enigme_pere_fouras() == True:
+            cle = cle + 1
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print("#-----------------Epreuve final --------------------#")
+print("bravo tu as recuperé 3 clé, maintenant c'est heure de l'epreuve finale")
+if salle_De_tresor() == True:
+    print("bravo vous avez gagné !!")
+else:
+    print("perdu .....")
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -13,6 +13,7 @@ def introduction():
     print("bienvenue dans l'aventure Fort-Boyard")
     print("tu doit accomplir des épreuves pour gagner des clés et déverrouiller la salle du trésor")
     print("L'objectif est de ramasser trois clés pour accéder à la salle du trésor")
+    print("")
 
 
 def composer_equipe():
@@ -21,6 +22,7 @@ def composer_equipe():
     Sortie :  dictionnaire contenant l'equipe
     Rôle: fonction qui permet de crée une equipe avec au maximun 3 membres
     '''
+    print("Tu va maintenant composer ton équipe pour affronter le fort ! ")
     nb_joueurs = int(input("Combien de joueur dans l'équipe ?"))
     equipe = {}
     joueur1 = {}
@@ -28,8 +30,9 @@ def composer_equipe():
     joueur3 = {}
     while nb_joueurs > 3:
         print("Max 3 joueurs dans l'équipe !")
-        nb_joueurs = int(input("Combien de joueur dabs l'équipe ?"))
+        nb_joueurs = int(input("Combien de joueur dans l'équipe ?"))
     for i in range(nb_joueurs):
+        print("#--------------------Joueur numero: "+str(i+1)+"---------------------#")
         if i == 0:
             nom = input("Nom du joueur : ")
             profession = input("Profession du joueur : ")
@@ -69,12 +72,18 @@ def choisir_joueur(equipe):
     Sortie : joueur sous forme de dictionnaire
     Rôle: permet de chosir un joueur pour l'épreuve
     '''
+    print("#---------------------- choix du joueur ---------------------#")
     for i in range(1, len(equipe)):
         if equipe[i]["Leader"] == 1:
             print(str(i), '. ' + equipe[i]["Nom"] + " (" + equipe[i]["Profession"] + ") - Leader")
         else:
             print(str(i), '. ' + equipe[i]["Nom"] + " (" + equipe[i]["Profession"] + ") - Membre")
     nb = int(input("Entrez le numéro du joueur: "))
+    while nb < 1 or nb > len(equipe):
+        nb = int(input("Entrez le numéro du joueur: "))
+    print("")
+    print("#----------------------------EPREUVE-------------------------#")
+    print("")
     return equipe[nb]
 
 
@@ -84,16 +93,20 @@ def menu_epreuves():
     Sortie : entier qui reprensente une epreuve
     Rôle: permet de chosir une épreuve
     '''
-    print("Menu des Épreuves :")
+    print("")
+    print("#----------------------choix de l'épreuve---------------------#")
+    print("")
+    print("")
+    print("Voici le menu des Épreuves :")
     print("1. Épreuve de Mathématiques")
     print("2. Épreuve de Logique")
     print("3. Épreuve du hasard")
     print("4. Énigme du Père Fouras")
-    choix = int(input("Veuillez indiquer le numero de l'épreuve chosie"))
-    while choix<= 1 and choix >=1:
+    choix = int(input("Veuillez indiquer le numero de l'épreuve chosi"))
+    while choix<= 1 and choix >=4:
         choix = int(input("Veuillez indiquer le numero de l'épreuve choisie (entre 1 et 4) "))
+
     return choix
 
 
 
-print(choisir_joueur(composer_equipe()))

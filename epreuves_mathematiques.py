@@ -175,5 +175,4 @@ def epreuve_math():
     epreuve=randint(0,len(epreuves)-1)
     return epreuves[epreuve]()
 
-epreuve_math()
 
