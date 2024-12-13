@@ -58,7 +58,14 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
 
 
 
-## 3. Journal de Bord
+## 3. **Journal de Bord**
+### **29 novembre**
+- **Initialisation du projet** et répartition du travail :
+  - Création de deux branches :
+    - **Branche epreuves_mathematiques** : Nathan LAFFEZ s'occupe des épreuves Mathématiques.
+    - **Branche ajout_epreuves_hasard** : Clément LOY s'occupe des épreuves d'hasard.
+
+---
 
 
 
