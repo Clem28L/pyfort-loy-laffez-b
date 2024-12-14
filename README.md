@@ -1,36 +1,74 @@
-Titre du Projet 
-o Contributeurs : Liste des membres du binôme avec leurs rôles respectifs. 
-o Description : Un bref aperçu du projet 
-o Fonctionnalités Principales : Liste des fonctionnalités clés que l'application 
-o re. 
-o Technologies Utilisées : Mentionner les langages de programmation, les 
-bibliothèques (si applicable), et les outils. 
-o Installation : 
-§ Instructions pour cloner le dépôt Git. 
-§ Étapes pour configurer l’environnement de développement (installations 
-nécessaires). 
-o Utilisation : 
-§ Instructions sur comment exécuter l'application. 
-§ Éventuellement, des exemples de commandes ou des cas d'utilisation. 
-2. Documentation Technique 
-o Algorithme du jeu : 
-§ Présentez l'algorithme que vous avez développé pour le projet en incluant 
-chaque étape sous forme de liste numérotée. 
-o Détails des fonctions implémentées : 
-§ Fournissez la liste des prototypes des fonctions, accompagnée 
-d'explications brèves sur leur rôle et de descriptions des paramètres. 
-o Gestion des Entrées et Erreurs : 
-§ Décrivez comment le code traite les valeurs et les intervalles, ainsi que 
-les méthodes mises en place pour gérer les erreurs potentielles. 
-§ Fournissez une liste des bugs connus. 
-3. Journal de Bord 
-o Un journal de bord peut aider à suivre le progrès du projet et la répartition des 
-tâches :
-§ Chronologie du Projet : Dates et descriptions des étapes clés, des 
-décisions prises, et des problèmes rencontrés. 
-§ Répartition des Tâches : Qui a travaillé sur quoi et comment les tâches 
-ont été divisées. 
-4. Tests et Validation 
-o Stratégies de Test : 
-§ Cas de test spécifiques et résultats. 
-§ Captures d'écran montrant les tests en action.
+# README
+
+## 1. **Présentation Générale**
+
+### **Pyfort - LOY LAFFEZ**
+
+**Contributeurs :**
+- Clément LOY
+- Nathan LAFFEZ
+
+### **Description**
+
+Ce dépôt contient le jeu **Pyfort**, réalisé dans le cadre du projet de programmation en Python à l'EFREI Paris. Inspiré du jeu télévisé, l'objectif est de gagner des clés pour accéder à la salle du trésor et tenter de remporter la partie.
+
+#### **Déroulement du jeu**
+Le jeu commence par la création d'une équipe de joueurs qui doit relever plusieurs types d'épreuves :
+- Des épreuves **Mathématiques** : Factorielles, équations et roulette mathématique.
+- Des épreuves **Hasard** : Bonneteau et épreuve de dés.
+- Des épreuves **Logique** : Bataille navale.
+- Des épreuves **Énigme** : Une énigme du père Fouras.
+
+Pour accéder à la suite, l'équipe doit remporter **trois clés**.
+
+### **Fonctionnalités Principales**
+- Simulation complète du jeu avec une progression logique des épreuves.
+
+### **Technologies Utilisées**
+- Programmation en Python.
+- Modules : `JSON` et `random`.
+- Gestion de version : GIT et GitHub (avec l'utilisation des branches).
+
+---
+
+## 2. **Installation**
+
+1. **Cloner le dépôt GitHub** :
+   ```bash
+   git clone https://github.com/Clem28L/pyfort-loy-laffez-b
+   ```
+
+2. **Exécuter le jeu** :
+   Lancez le fichier `main.py` avec Python :
+   ```bash
+   python main.py
+   ```
+
+## 2. Documentation Technique
+
+### Algorithme du Jeu
+
+
+
+### Détails des Fonctions Implémentées
+
+
+
+### Gestion des Entrées et Erreurs
+
+
+
+## 3. **Journal de Bord**
+### **29 novembre**
+- **Initialisation du projet** et répartition du travail :
+  - Création de deux branches :
+    - **Branche epreuves_mathematiques** : Nathan LAFFEZ s'occupe des épreuves Mathématiques.
+    - **Branche ajout_epreuves_hasard** : Clément LOY s'occupe des épreuves d'hasard.
+
+---
+
+
+
+
+## 4. Tests et Validation
+
