@@ -4,10 +4,10 @@ from epreuves_hasard import epreuve_hasard
 from epreuves_logiques import jeu_battaile_navale
 from epreuves_mathematiques import epreuve_math
 from fonctions_utiles import *
-
+#Lancer de l'introduction et de la fonction pour composer une équipe
 introduction()
 equipe = composer_equipe()
-
+#Boucle permettant de compter le nombre de clés
 cle = 0
 while cle != 3:
     print("#--------------------------------------------------------------------------------#")
@@ -16,6 +16,7 @@ while cle != 3:
     choix = menu_epreuves()
     print(choix)
     choisir_joueur(equipe)
+    #condition qui permet de lancer une épreuve et de verifier si elle et gagné
     if choix ==1 :
         if epreuve_math() == True:
             cle = cle + 1
@@ -29,7 +30,7 @@ while cle != 3:
         if enigme_pere_fouras() == True:
             cle = cle + 1
 
-
+#Epreuve final permettant de savoir si elle est gagné ou non
 print("#-----------------Epreuve final --------------------#")
 print("bravo tu as recuperé 3 clé, maintenant c'est heure de l'epreuve finale")
 if salle_De_tresor() == True:
