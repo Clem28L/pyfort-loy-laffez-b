@@ -65,7 +65,30 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
     - **Branche epreuves_mathematiques** : Nathan LAFFEZ s'occupe des épreuves Mathématiques.
     - **Branche ajout_epreuves_hasard** : Clément LOY s'occupe des épreuves d'hasard.
 
----
+### **1er Décembre**
+- (Nathan Laffez) :
+  - ajout de la branche epreuve mathématiques avec la première et la second epreuve de mathématique : factorielle et premier 
+
+### **2 Décembre**
+- (Nathan Laffez) :
+  - Finalisation de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale
+ 
+### **5 Décembre**
+- (Nathan Laffez) :
+  - Ajout de l'epreuve logique : bataille navale , manque juste les commentaires à ajouter et quelques soucis de degisn
+
+  ### **6 Décembre**
+- (Nathan Laffez) :
+  - Ajout des commentaires à l'epreuve logique : Bataille Navale
+  - Ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
+  - Début du code des fonctions utile avec la fonction composer équipe
+ 
+### **14 Décembre**
+-(Nathan Laffez) :
+  - Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
+
+
+
 
 
 
