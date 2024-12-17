@@ -13,7 +13,7 @@ def suivi(joueur):
     Rôle: Permet de changer le tour entre le Joueur 0 et le maitre du jeu (Joueur 1)
     '''
     if joueur==0:
-        print("C'est au tour du maitre du jeu :")
+        print("#-----------------------------C'est au tour du maitre du jeu :-----------------------------------#")
         joueur = 1
         return joueur
     else:
@@ -39,12 +39,14 @@ def demande_position():
     Sortie : tuple(sous forme (x,y)
     Rôle: Demande au joueur une position sur la grille entre 1 et 3
     '''
+    print("-------------------------------------------------------------------------------------------------------")
     Ligne=int(input("Saisir un ligne entre 1 et 3:"))-1
-    while Ligne<0 or Ligne>2: # verifie que la ligne entrée est bien comprise entre 0 et 2
-        Ligne=int(input("Saisir un ligne :"))-1
+    while Ligne<0 or Ligne>2 : # verifie que la ligne entrée est bien comprise entre 0 et 2
+        Ligne=int(input("Saisir un ligne entre 1 et 3  :"))-1
     Collone = int(input("Saisir une colonne entre 1 et 3 :")) - 1
     while Collone<0 or Collone>2:# verifie que la collonne entrée est bien comprise entre 0 et 2
         Collone=int(input("Saisir une colonne entre 1 et 3 :"))-1
+    print("-------------------------------------------------------------------------------------------------------")
     return (Ligne,Collone)
 
 
@@ -57,12 +59,12 @@ def init():
     '''
     Grille=grille_vide()
     for i in range(2):
-        print("placez le Bateau",i+1," : ")
+        print("#------------------------------Placez le Bateau",i+1," :---------------------------------------# ")
         pos=demande_position()
         Lig=pos[0]
         Col=pos[1]
         while Grille[Lig][Col]=="B":#Demande au joueur du saisir une posistion si a la position saisie un bateau est déjà présent
-            print("Il y'a deja un bateau a cet emplacement !!")
+            print("#-----------------------Il y'a deja un bateau a cet emplacement !!--------------------------#")
             pos = demande_position()
             Lig = pos[0]
             Col = pos[1]
@@ -94,7 +96,7 @@ def affiche(Grille,message):
     Rôle: affiche la grille des bateaux ou la grille des tirs précédents avec un affichage special
     '''
     if message=="Découvrez votre grille de jeu avec vos bateaux :":
-        print("Découvrez votre grille de jeu avec vos bateaux :")
+        print("#--------------------------Découvrez votre grille de jeu avec vos bateaux :-----------------------------------#")
         for i in range(len(Grille)):
             print("|",end="")
             for j in range(len(Grille[i])):
@@ -102,13 +104,13 @@ def affiche(Grille,message):
             print()
         print("-------------")
     if message=="Rappel de l'historique des tirs que vous avez effectués":
-        print("Rappel de l'historique des tirs que vous avez effectués")
+        print("#----------------------Rappel de l'historique des tirs que vous avez effectués----------------------#")
         for i in range(len(Grille)):
             print("| ",end="")
             for j in range(len(Grille[i])):
                     print(Grille[i][j],end=" | ")
             print()
-        print("-------------")
+        print("-----------------------------------------------------------------------------------------------------")
 
 
 
@@ -121,7 +123,7 @@ def tour(joueur,grille_tirs_joueur,grille_adversaire):
     affiche le résultat du tir touché / a l'eau
     '''
     if joueur==1:
-        TIR=(randint(0,2),randint(0,2))
+        TIR=(randint(0,2)+1,randint(0,2)+1)
         print("Le maitre du jeu tir en position :",TIR)
         if grille_adversaire[TIR[0]][TIR[1]]=="B":
             print("Touché Coulé !!")
