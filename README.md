@@ -64,33 +64,41 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
   - Création de deux branches :
     - **Branche epreuves_mathematiques** : Nathan LAFFEZ s'occupe des épreuves Mathématiques.
     - **Branche ajout_epreuves_hasard** : Clément LOY s'occupe des épreuves d'hasard.
+    
+### **30 novembre**
+- <ins>**Clément LOY**</ins>
+  - **Branche ajout_des_épreuves_hasard** : Début de la fonction pour l'épreuve du bonneteau
 
 ### **1er Décembre**
-- (Nathan Laffez) :
+- <ins>**Nathan Laffez**</ins> :
   -- **Branche epreuves_mathematiques** : Finalisation de 2 epreuves factorielle et Nombre Premier , il manque les commentaires à ajouter.
+- <ins>**Clément LOY**</ins> :
+    - Création de deux branches :
+       - **Branche epreuves_logique** : Nathan LAFFEZ s'occupe de l'épreuve logique (Bataille Navale)
+       - **Branche ajout_enigme_pere_fouras** : Clément LOY s'occupe de l'epreuve de l'enigme du père fouras.
+       - **Branche ajout_salle_tresor** : Clément LOY s'occupe de l'epreuve de l'épreuve final.
+   - **Création du fichier readme** : il permettra de documenter notre projet avec 3 section, la **Présentation Générale**,la **Documentation Technique** et le **Journal de Bord**
+  
 ### **2 Décembre**
-- (Nathan Laffez) :
+- <ins>**Nathan Laffez**</ins> :
   -**Branche epreuves_mathematiques** :  Fin de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale.
- 
+
+### **3 Décembre**
+- <ins>**Clement LOY**</ins> :
+  -**Branche epreuves_mathematiques** :  Finalisation de l'épreuve de bonneteau avec notamment un affiche pour l'épreuve.
+
 ### **5 Décembre**
-- (Nathan Laffez) :
-  - **Branche epreuves_logique ** : Finalisation de l'epreuve logique : bataille navale , il manque juste les commentaires à ajouter et quelques soucis de degisn dans la console .
+- <ins>**Nathan Laffez** </ins>:
+  - **Branche epreuves_logique** : Finalisation de l'epreuve logique : bataille navale , il manque juste les commentaires à ajouter et quelques soucis de degisn dans la console .
 
   ### **6 Décembre**
-- (Nathan Laffez) :
-  - **Branche epreuves_logique **:  Ajout des commentaires à l'epreuve logique : Bataille Navale
+- <ins>**Nathan Laffez**</ins> :
+  - **Branche epreuves_logique**:  Ajout des commentaires à l'epreuve logique : Bataille Navale
   - **Branche epreuves_mathematiques** : Tentatives d'ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
   - **Branche fonction_utlies** :  Début du code des fonctions utile avec la fonction composer équipe
  
 ### **14 Décembre**
--(Nathan Laffez) :
-  - **Branche epreuves_logique ** : Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
+- <ins>**Nathan Laffez**</ins>:
+  - **Branche epreuves_logique** : Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
 
-
-
-
-
-
-
-## 4. Tests et Validation
 
