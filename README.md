@@ -87,18 +87,36 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
 - <ins>**Clement LOY**</ins> :
   - **Branche epreuves_mathematiques** :  Finalisation de l'épreuve de bonneteau avec notamment un affiche pour l'épreuve.
 
+### **4 Décembre**
+- <ins>**Clément LOY** </ins>:
+  - **Branche  ajout_enigme_pere_fouras** : Implementation de l'épreuve de l'enigme pere fouras
+  - **Branche  ajout_salle_tresor** : Implementation de l'épreuve de la salle de trésor
+  
 ### **5 Décembre**
 - <ins>**Nathan Laffez** </ins>:
   - **Branche epreuves_logique** : Finalisation de l'epreuve logique : bataille navale , il manque juste les commentaires à ajouter et quelques soucis de degisn dans la console .
+  
 
 ### **6 Décembre**
 - <ins>**Nathan Laffez**</ins> :
   - **Branche epreuves_logique**:  Ajout des commentaires à l'epreuve logique : Bataille Navale
   - **Branche epreuves_mathematiques** : Tentatives d'ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
   - **Branche fonction_utlies** :  Début du code des fonctions utile avec la fonction composer équipe
+- <ins>**Clément LOY**</ins> :
+  - **Branche fonction_utlies** :  Implementation de la fonction introduction / menu épreuve / choisir joueur
  
+### **13 Décembre**
+- <ins>**Clément LOY**</ins>:
+  - **Branche master** : implementation de la fonction principale permettant de simuler le jeu 
+    
 ### **14 Décembre**
 - <ins>**Nathan Laffez**</ins>:
   - **Branche epreuves_logique** : Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
 
+### **17 Décembre**
+- <ins>**Nathan Laffez**</ins>:
+  - **Branche master** : modification du readme
+- <ins>**Clément LOY**</ins>:
+  - **Branche master** : modification du readme
+  - **Branche enresgistrer_historique** : Creation de la fonction qui permet d'enregistrer l'historique des parties avec chaques épreuves enregistrer individuellement
 
