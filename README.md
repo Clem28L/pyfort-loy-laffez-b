@@ -67,25 +67,24 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
 
 ### **1er Décembre**
 - (Nathan Laffez) :
-  - ajout de la branche epreuve mathématiques avec la première et la second epreuve de mathématique : factorielle et premier 
-
+  -- **Branche epreuves_mathematiques** : Finalisation de 2 epreuves factorielle et Nombre Premier , il manque les commentaires à ajouter.
 ### **2 Décembre**
 - (Nathan Laffez) :
-  - Finalisation de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale
+  -**Branche epreuves_mathematiques** :  Fin de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale.
  
 ### **5 Décembre**
 - (Nathan Laffez) :
-  - Ajout de l'epreuve logique : bataille navale , manque juste les commentaires à ajouter et quelques soucis de degisn
+  - **Branche epreuves_logique ** : Finalisation de l'epreuve logique : bataille navale , il manque juste les commentaires à ajouter et quelques soucis de degisn dans la console .
 
   ### **6 Décembre**
 - (Nathan Laffez) :
-  - Ajout des commentaires à l'epreuve logique : Bataille Navale
-  - Ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
-  - Début du code des fonctions utile avec la fonction composer équipe
+  - **Branche epreuves_logique **:  Ajout des commentaires à l'epreuve logique : Bataille Navale
+  - **Branche epreuves_mathematiques** : Tentatives d'ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
+  - **Branche fonction_utlies** :  Début du code des fonctions utile avec la fonction composer équipe
  
 ### **14 Décembre**
 -(Nathan Laffez) :
-  - Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
+  - **Branche epreuves_logique ** : Amélioration de l'affichage en console pour l'épreuve logique :Bataille Navale 
 
 
 
