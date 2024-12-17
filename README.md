@@ -81,17 +81,17 @@ Pour accéder à la suite, l'équipe doit remporter **trois clés**.
   
 ### **2 Décembre**
 - <ins>**Nathan Laffez**</ins> :
-  -**Branche epreuves_mathematiques** :  Fin de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale.
+  - **Branche epreuves_mathematiques** : Fin de l'epreuve mathématiques avec l'ajout de la dernière epreuve : Roullette ainsi que les commentaires et la fonction principale.
 
 ### **3 Décembre**
 - <ins>**Clement LOY**</ins> :
-  -**Branche epreuves_mathematiques** :  Finalisation de l'épreuve de bonneteau avec notamment un affiche pour l'épreuve.
+  - **Branche epreuves_mathematiques** :  Finalisation de l'épreuve de bonneteau avec notamment un affiche pour l'épreuve.
 
 ### **5 Décembre**
 - <ins>**Nathan Laffez** </ins>:
   - **Branche epreuves_logique** : Finalisation de l'epreuve logique : bataille navale , il manque juste les commentaires à ajouter et quelques soucis de degisn dans la console .
 
-  ### **6 Décembre**
+### **6 Décembre**
 - <ins>**Nathan Laffez**</ins> :
   - **Branche epreuves_logique**:  Ajout des commentaires à l'epreuve logique : Bataille Navale
   - **Branche epreuves_mathematiques** : Tentatives d'ajout d'une features sur l'epreuve du Nombre premier dans epreuve mathématiques
