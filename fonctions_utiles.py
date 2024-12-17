@@ -40,6 +40,7 @@ def composer_equipe():
             joueur1["Nom"] = nom
             joueur1["Profession"] = profession
             joueur1["Leader"] = leader
+            joueur1["cle"] = 0
             equipe = {1: joueur1}
         if i == 1:
             nom = input("Nom du joueur : ")
@@ -48,6 +49,7 @@ def composer_equipe():
             joueur2["Nom"] = nom
             joueur2["Profession"] = profession
             joueur2["Leader"] = leader
+            joueur2["cle"] = 0
             equipe = {1: joueur1, 2: joueur2}
         if i == 2:
             nom = input("Nom du joueur : ")
@@ -56,6 +58,7 @@ def composer_equipe():
             joueur3["Nom"] = nom
             joueur3["Profession"] = profession
             joueur3["Leader"] = leader
+            joueur3["cle"] = 0
             equipe = {1: joueur1, 2: joueur2, 3: joueur3}
     equipe["Clé gagné"] = 0
     for i in range(1, nb_joueurs + 1):
@@ -79,12 +82,12 @@ def choisir_joueur(equipe):
         else:
             print(str(i), '. ' + equipe[i]["Nom"] + " (" + equipe[i]["Profession"] + ") - Membre")
     nb = int(input("Entrez le numéro du joueur: "))
-    while nb < 1 or nb > len(equipe):
+    while nb < 1 or nb > len(equipe)-1:
         nb = int(input("Entrez le numéro du joueur: "))
     print("")
     print("#----------------------------EPREUVE-------------------------#")
     print("")
-    return equipe[nb]
+    return nb
 
 
 def menu_epreuves():
