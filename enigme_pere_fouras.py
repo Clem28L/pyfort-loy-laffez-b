@@ -11,12 +11,12 @@ def charger_enigmes(fichier):
     '''
     Parametres : fichier (Nom du fichier json)
     Sortie : liste_enigmes (Liste des dictionnaires comprenant les questions ainsi que les reponses)
-    Rôle: permet de charger le fichier json et de retourner le dictionnaire comportant les question et reponse
+    Rôle: permet de charger le fichier json et de retourner le dictionnaire comportant les questions et reponses
     '''
     with open(fichier, 'r', encoding='utf-8') as f:
         donnees = json.load(f)
     liste_enigmes = []
-    #creation de la liste des dictionnaire question/reponse
+    #creation de la liste des dictionnaires questions/reponses
     for enigme in donnees:
         liste_enigmes.append({"question": enigme["question"], "reponse": enigme["reponse"]})
     return liste_enigmes
@@ -26,22 +26,22 @@ def charger_enigmes(fichier):
 
 def enigme_pere_fouras():
     '''
-    Parametres : aucun parametres
+    Parametres : aucun parametre
     Sortie : aucune sortie fonction principal qui permet d'afficher et d'interagir avec l'utilisateur
-    Rôle: permet de donner une enigme a l'utilisateur et qu'il puisse y repondre, le joueur a trois essaie pour trouver la reponse
+    Rôle: permet de donner une enigme à l'utilisateur et qu'il puisse y repondre, le joueur a trois essais pour trouver la reponse
     '''
     liste_enigmes = charger_enigmes("data/enigmesPF.json")
     enigme = liste_enigmes[randint(0, len(liste_enigmes) - 1)]
     print(enigme["question"])
     essaie = 3
-    #boucle qui laisse trois essaie pour deviner la reponse
+    #boucle qui laisse trois essais pour deviner la reponse
     while essaie >0:
-        reponse = input("Quel est ta réponse à l'engime ?").lower()
+        reponse = input("Quel est ta réponse à l'égnime ?").lower()
         if reponse == enigme["reponse"].lower():
-            print("Bravo, tu as resolu l'énigme du pere fouras, voici ta clé !")
+            print("Bravo, tu as resolu l'énigme du pére Fouras, voici ta clé !")
             return True
         else:
             essaie -= 1
-            print("reponse incorrecte, cherche encore il te reste ", str(essaie),"essaie pour trouver !")
-    print("Malheurement tu as perdu, la reponse était", str(enigme["reponse"]))
+            print("reponse incorrecte, cherche encore il te reste ", str(essaie),"essai pour trouver !")
+    print("Malheureusement tu as perdu, la réponse était", str(enigme["reponse"]))
 

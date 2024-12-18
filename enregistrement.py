@@ -7,7 +7,7 @@ def initialisation_sauvegarde_partie(equipe, nb_partie, nom_f='historique.txt'):
         f.write("-" * 50 + "\n")
         for joueur_id in equipe:
             joueur = equipe[joueur_id]
-            if isinstance(joueur, dict):  # on verifie que 'joueur' est bien un dictionnaire (pour pas avoir une erreur avec le clé gagné)
+            if isinstance(joueur, dict):  # on verifie que 'joueur' est bien un dictionnaire (pour pas avoir une erreur avec la clé gagné)
                 if joueur['Leader'] == 1:
                     leader = 'X'
                 else:

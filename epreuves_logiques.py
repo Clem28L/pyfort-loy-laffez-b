@@ -1,8 +1,8 @@
 from random import randint
 '''
 #-----------------------------Pyfort-Epreuves-Logique-Bataille-Navale---------------------#
-Rôle : Permet de jouer à la bataille navale a 1 joueur contre un maitre du jeu qui
-joue et place aleatoirement ses bateau
+Rôle : Permet de jouer à la bataille navale à 1 joueur contre un maitre du jeu qui
+joue et place aleatoirement ses bateaux
 Auteurs:Nathan Laffez/Clément Loy
 '''
 
@@ -54,8 +54,8 @@ def init():
     '''
     Parametres : /
     Sortie : Tableau 2D
-    Rôle:Permet de créer une grille vide sous forme de tableau 2D et demande au joueur de placer 2 bateau, cela verifie
-    si un bateau est déjà placé a cette emplacement
+    Rôle:Permet de créer une grille vide sous forme de tableau 2D et demande au joueur de placer 2 bateaux, cela verifie
+    si un bateau est déjà placé à cet emplacement
     '''
     Grille=grille_vide()
     for i in range(2):

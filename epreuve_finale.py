@@ -51,6 +51,6 @@ def salle_De_tresor():
     if reponse_correcte == True:
         print("Le mot code est correcte, BRAVO")
     else:
-        print("tu n'a pas reussi à trouver le mot code... le mot code etait "+ mot_a_deviner["MOT-CODE"])
+        print("tu n'a pas réussi à trouver le mot code... le mot code était "+ mot_a_deviner["MOT-CODE"])
 
 

@@ -33,7 +33,7 @@ def bonneteau():
     '''
     liste_elements = ["A","B","C"]
     tentative = 2
-    print("te voila arrivé dans l'epreuve du bonneteau, c'est assez simple, la clé se trouve sous un de ses bonneteaux, tu as deux essaie a toi de le retrouver "+ str(tentative))
+    print("te voila arrivé dans l'épreuve du bonneteau, c'est assez simple, la clé se trouve sous un de ses bonneteaux, tu as deux essais à toi de le retrouver "+ str(tentative))
 
     bonneteau_gagnant = liste_elements[randint(0,len(liste_elements)-1)]
     #boucle qui permet de lancer le jeu du bonneteau avec 3 essaie
@@ -126,7 +126,7 @@ def jeu_lance_des():
         if des[1] != 6 and des[0] != 6:
             print("personne n'a obtenu de 6.")
             if essais == 0:
-                print("Apres 3 essaie personne n'a obtenu de 6, match nul !")
+                print("Apres 3 essais personne n'a obtenu de 6, match nul !")
                 return False
             else:
                 print("On recommence !!")
