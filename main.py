@@ -13,10 +13,10 @@ nb_partie = recuperer_nb_partie()
 initialisation_sauvegarde_partie(equipe, nb_partie)
 
 #Boucle permettant de compter le nombre de clés
-cle = 0
-while cle != 3:
+equipe["Clé gagné"] = 0
+while equipe["Clé gagné"] != 3:
     print("#--------------------------------------------------------------------------------#")
-    print("                          "+str(cle)+" cle                   ")
+    print("                          "+str(equipe["Clé gagné"])+" cle                   ")
     print("#--------------------------------------------------------------------------------#")
     choix = menu_epreuves()
     print(choix)

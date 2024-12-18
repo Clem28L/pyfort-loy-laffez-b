@@ -1,0 +1,44 @@
+==================================================
+         Partie 1
+==================================================
+ID   Nom                 Profession     Leader    
+--------------------------------------------------
+1    Clement             sdfsd          X         
+==================================================
+Nouvelle Epreuve pour la Partie 1
+Type : Hasard
+Joueur : Clement 
+Résultat : Gagne
+Cles totales de l'equipe : 1
+==================================================
+==================================================
+Nouvelle Epreuve pour la Partie 1
+Type : Hasard
+Joueur : Clement 
+Résultat : Perdu
+Cles totales de l'equipe : 1
+==================================================
+==================================================
+Nouvelle Epreuve pour la Partie 1
+Type : Hasard
+Joueur : Clement 
+Résultat : Gagne
+Cles totales de l'equipe : 2
+==================================================
+==================================================
+Nouvelle Epreuve pour la Partie 1
+Type : Hasard
+Joueur : Clement 
+Résultat : Gagne
+Cles totales de l'equipe : 3
+==================================================
+==================================================
+         Resultat de la Partie 1
+==================================================
+ID   Nom                 Profession     Leader    Cles 
+==================================================
+1    Clement             sdfsd          X         
+==================================================
+Clé gagnee (total equipe) : 3
+Partie gagnee : Non
+==================================================
